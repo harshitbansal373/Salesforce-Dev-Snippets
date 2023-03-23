@@ -1,0 +1,17 @@
+<messaging:emailTemplate subject="Approval Requested - {!relatedTo.Quote__r.SBQQ__Account__r.Name} - {!relatedTo.Quote__r.Name} - {!relatedTo.Quote__r.SBQQ__SalesRep__r.Name}"  recipientType="User" relatedToType="sbaa__Approval__c">
+<messaging:HtmlEmailBody >
+<html>
+<body>
+ <p>
+ <b>Account Name</b>: {!relatedTo.Quote__r.SBQQ__Account__r.Name}<br/>
+ <b>Quote</b>: {!relatedTo.Quote__r.Name}<br/>
+ <b>Reason for Approval</b>: {!relatedTo.Name} ({!relatedTo.sbaa__ApprovalChain__r.Name} - {!relatedTo.sbaa__Rule__r.Name})<br/>
+ <b>View Approval</b>:<a href="https://mgrc--dev1.sandbox.lightning.force.com/{!relatedTo.id}"> {!relatedTo.id}</a><br/>
+ <b>Sales User</b>: {!relatedTo.Quote__r.SBQQ__SalesRep__r.Name}<br/>
+ <b>Approval Notes</b>: {!relatedTo.Quote__r.Approval_Notes__c}<br/>
+ <p><c:CustomQuoteLineTable quoteId="{!relatedTo.Quote__r.id}" /></p>
+ </p>
+</body>
+</html>
+</messaging:HtmlEmailBody>
+</messaging:emailTemplate>
