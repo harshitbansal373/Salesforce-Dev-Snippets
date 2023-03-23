@@ -1,0 +1,52 @@
+<apex:component access="global" controller="CustomQuoteLine">
+  <apex:attribute type="id" name="quoteId" description="" assignTo="{!currentQuoteId}"/>
+   <table style="border-collapse:collapse; width:100%;">
+    <tr>
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Product code</td>
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Quantity</td> 
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Price</td> 
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Minimum Price</td> 
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Target Price</td> 
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Optimum Price</td> 
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Contracted Price</td> 
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Term</td> 
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Cost</td> 
+        <td style="font-weight:bold; background-color:#d9d9d9; border:solid 1pt;" align="center">Zilliant Cost</td> 
+     </tr>
+    <apex:repeat value="{!QuoteLines}" var="QL">
+        <tr>
+            <td style="border:solid 1pt;">
+                {!QL.SBQQ__ProductCode__c}
+            </td>  
+            <td style="border:solid 1pt;">
+                {!QL.SBQQ__Quantity__c}
+            </td>  
+            <td style="border:solid 1pt;">
+                {!QL.SBQQ__ListPrice__c}
+            </td> 
+            <td style="border:solid 1pt;">
+                {!QL.Minimum_Price__c}
+            </td> 
+            <td style="border:solid 1pt;">
+                {!QL.Target_Price__c}
+            </td> 
+            <td style="border:solid 1pt;">
+                {!QL.Optimum_Price__c}
+            </td> 
+            <td style="border:solid 1pt;">
+                {!QL.Contracted_Price__c}
+            </td> 
+            <td style="border:solid 1pt;">
+                {!QL.SBQQ__SubscriptionTerm__c}
+            </td> 
+            <td style="border:solid 1pt;">
+                {!QL.MGRC_Cost__c}
+            </td> 
+            <td style="border:solid 1pt;">
+                {!QL.Zilliant_Cost__c}
+            </td> 
+        </tr>
+    </apex:repeat>       
+</table>
+
+</apex:component>
