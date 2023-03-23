@@ -697,3 +697,47 @@ export function isFieldEditable(fieldName, line) {
             console.log('Vertex Error -> ' + err);
         })
   }
+
+
+// Quote Fields -> MGRC_Transaction_Type__c
+//                 MGRC_Special_Price_Type__c
+//                 CPL_Id__c
+//                 SBQQ__ExpirationDate__c
+//                 SBQQ__SubscriptionTerm__c
+//                 Transportation_Distance__c
+//                 Delivery_State__c
+
+
+// Quote line fields ->    BillHow__c
+//                         SBQQ__Quote__c
+//                         SBQQ__Product__c
+//                         SBQQ__ProductCode__c
+//                         Bundle_Name__c
+//                         MGRC_Derationalize__c
+//                         Rental_Sale__c
+//                         Drawings_Type__c
+//                         SBQQ__DynamicOptionId__c
+//                         SBQQ__RequiredBy__c
+//                         SBQQ__Bundle__c
+//                         Primary_Model__c
+//                         Transportation_Type__c
+//                         Depot_Fee__c
+//                         Delivery_Return__c
+//                         Charge_No_Charge__c
+//                         BillHow__c
+//                         Advisory_Type__c
+//                         Id
+//                         Guidance_Locked__c
+//                         PV_BillHow__c
+//                         PV_MGRC_Cost__c
+//                         MGRC_Cost__c
+//                         PV_MGRC_Derationalize__c
+//                         PV_Primary_Model__c
+//                         PV_Subscription_Term__c
+//                         PV_Transportation_Distance__c
+//                         PV_Transportation_Type__c
+//                         Division__c
+//                         One_Time_PR_Fired__c
+//                         MGRC_Special_Price_Type__c
+//                         Pilot_Permit_Tier__c
+//                         PV_Pilot_Permit_Tier__c
